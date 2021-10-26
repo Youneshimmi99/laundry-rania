@@ -4096,6 +4096,7 @@ input[type="button"].btn-block {
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
+  white-space: nowrap;
 }
 
 .navbar-nav .dropdown-menu {
@@ -9691,4 +9692,13 @@ h6,
       .navbar-toggler-icon{
         font-size: 0.8em;
     }
+    .arabic-h1{
+      font-style: normal;
+      letter-spacing: 0px;
+    }
   
+    @media (max-width: 767.98px) {
+      .hide-the-3-useless {
+        display: none;
+      }
+    }
