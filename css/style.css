@@ -35,9 +35,9 @@
   --font-family-sans-serif: "Open Sans", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
-body {
+/* body {
   background-image: url("https://www.solodev.com/assets/hero/hero.jpg");
-}
+} */
 .mfp-hide {
     display: none!important;
 }
@@ -9702,3 +9702,107 @@ h6,
         display: none;
       }
     }
+
+#calculator-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#calculator-container h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#calculator-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#calculator-form label {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+#calculator-form input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+#calculator-form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+#calculator-form button {
+  background-color: #194376;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+#calculator-form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#furniture-table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.listes-des-meubles {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#furniture-table thead {
+  background-color: #f2f2f2;
+}
+
+#furniture-table th, #furniture-table td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+#furniture-table th {
+  background-color: #194376;
+  color: white;
+}
+
+#furniture-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#furniture-table tr:hover {
+  background-color: #ddd;
+}
+
+#furniture-table td:first-child {
+  font-weight: bold;
+}

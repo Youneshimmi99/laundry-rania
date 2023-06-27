@@ -86,3 +86,21 @@
     
 })(jQuery);
 
+const calculateBtn = document.getElementById("calculate");
+
+calculateBtn.addEventListener("click", function() {
+	const carpetType = document.getElementById("carpet-type").value;
+	const carpetWidth = document.getElementById("carpet-width").value;
+	const carpetHeight = document.getElementById("carpet-height").value;
+	const totalPriceEl = document.getElementById("total-price");
+
+	if (carpetType === "0" || carpetWidth === "" || carpetHeight === "") {
+		alert("Sélectionnez le type de tapis et saisissez sa largeur et sa hauteur s'il vous plaît.");
+		return;
+	}
+
+	const area = carpetWidth * carpetHeight;
+	const totalPrice = carpetType * area;
+
+	totalPriceEl.value = totalPrice.toFixed(2) + " Dh";
+});
